@@ -31,15 +31,17 @@ public class loginServlet extends HttpServlet {
 		
 		PrintWriter writer = response.getWriter();
 		if (username.equals("") || password.equals("")) {
-			// Í¨Öª¿Í»§¶Ë
-			writer.print("²ÎÊı·Ç·¨£¡");
+			// é€šçŸ¥å®¢æˆ·ç«¯
+			writer.print("å‚æ•°éæ³•ï¼");
 			return;
 		}	
-		writer.print("ÓÃ»§Ãû" + username);
-		writer.print("ÃÜÂë" + password);
-		System.out.println("ÓÃ»§Ãû£º" + username);
-		System.out.println("ÃÜÂë£º" + password);
-		System.out.println("ÒÑ¾­¿ªÊ¼´¦ÀíÇëÇó");
+		writer.print("ç”¨æˆ·å" + username);
+		writer.print("å¯†ç " + password);
+		System.out.println("ç”¨æˆ·åï¼š" + username);
+		System.out.println("å¯†ç ï¼š" + password);
+		System.out.println("å·²ç»å¼€å§‹å¤„ç†è¯·æ±‚");
+		System.out.println("å˜»å˜»");
+
 	}
 
 
